@@ -11,7 +11,6 @@ app = dash.Dash(__name__)
 server = app.server
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = dash.Dash('auth', external_stylesheets=external_stylesheets)  ### with css called 'external_stylesheets'
 
 app.layout = html.Div([
     dcc.Input(id='my-id', value='Application Dash', type='text'),
